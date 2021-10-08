@@ -1,0 +1,31 @@
+/* Estilo del Footer */
+.footer {
+    background-color: black;
+    margin: 0rem 0rem 0rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    & &__texto {
+        color: yellowgreen;
+        font-size: 2rem;
+    }
+    & &__logoFacebook {
+        img {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+    }
+    & &__logoTwitter {
+        img {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+    }
+    & &__logoInstagram {
+        img {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+    }
+}

@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/* Estilo del Header */
+.header {
+  background-color: black;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.header .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .header__logo img {
+  height: 15rem;
+  width: 15rem;
+}
+
+.header .header__titulo {
+  color: yellowgreen;
+}
+
+.header h1 {
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+}
+
+.header nav ul {
+  width: 60%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav ul li {
+  font-size: 1.7rem;
+}
+
+.header nav ul li a:hover {
+  background-color: yellowgreen;
+  color: white;
+  padding: 0.5rem;
+}
+
+/* Estilo del Main */
+.main .main__titulo {
+  color: yellowgreen;
+  background-color: black;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 100;
+}
+
+.main .main__textoProducto {
+  color: black;
+  font-size: 2rem;
+}
+
+.main .main__gradiente {
+  font-size: 4rem;
+  color: black;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(yellow), to(yellowgreen));
+  background-image: linear-gradient(to bottom, yellow, yellowgreen);
+}
+
+.main .main__sucursal1 {
+  height: 100%;
+  width: 100%;
+}
+
+.main .main__map {
+  height: 50rem;
+  width: 100%;
+}
+
+.main .main__texto {
+  font-size: 2rem;
+  font-style: italic;
+  text-justify: auto;
+  font-weight: 100;
+  color: black;
+}
+
+.main .main__producto {
+  height: 20rem;
+  width: 15rem;
+}
+
+.main .main__formItem {
+  color: black;
+  font-size: 2rem;
+}
+
+.main .main__comentarios {
+  height: 15rem;
+  width: 100%;
+}
+
+.main .main__tamanioForm {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .main .main__historia {
+    margin-bottom: 1rem;
+  }
+  .main .main__historiaTexto {
+    height: 100%;
+    width: 100%;
+  }
+  .main .main__historiaImagenes {
+    height: 50%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main .main__historia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .main .main__historiaTexto {
+    height: 100%;
+    width: 45%;
+  }
+  .main .main__historiaImagenes {
+    height: 50%;
+    width: 50%;
+  }
+}
+
+.main .main__textoSucursal {
+  font-size: 1.5rem;
+  color: yellowgreen;
+  background-color: black;
+  text-align: center;
+}
+
+img.main__producto:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+/* Estilo del Footer */
+.footer {
+  background-color: black;
+  margin: 0rem 0rem 0rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer__texto {
+  color: yellowgreen;
+  font-size: 2rem;
+}
+
+.footer .footer__logoFacebook img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.footer .footer__logoTwitter img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.footer .footer__logoInstagram img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+/* Aplicando tipografía, márgenes y fondo al documento */
+html {
+  padding: 0;
+  font-family: 'Barlow', sans-serif;
+  font-size: 62.5%;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,85 @@
+/* Estilo del Main */
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+.main {
+    & &__titulo {
+        color: yellowgreen;
+        background-color: black;
+        text-align: center;
+        font-size: 6rem;
+        font-weight: 100;
+    }
+    & &__textoProducto {
+        color: black;
+        font-size: 2rem;
+    }
+    & &__gradiente {
+        font-size: 4rem;
+        color: black;
+        text-align: center;
+        background-image: linear-gradient(to bottom, yellow, yellowgreen);
+    }
+    & &__sucursal1 {
+        @include sizes(100%, 100%)
+    }
+    & &__map {
+        @include sizes(100%, 50rem)
+    }
+    & &__texto {
+        font-size: 2rem;
+        font-style: italic;
+        text-justify: auto;
+        font-weight: 100;
+        color: black;
+    }
+    & &__producto {
+        @include sizes(15rem, 20rem)
+    }
+    & &__formItem {
+        color: black;
+        font-size: 2rem;
+    }
+    & &__comentarios {
+        @include sizes(100%, 15rem)
+    }
+    & &__tamanioForm {
+        font-size: 2rem;
+    }
+    @media screen and (max-width: 991px) {
+        & &__historia {
+            margin-bottom: 1rem;
+        }
+        & &__historiaTexto {
+            @include sizes(100%, 100%)
+        }
+        & &__historiaImagenes {
+            @include sizes(100%, 50%)
+        }
+    }
+    @media screen and (min-width: 992px) {
+        & &__historia {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        & &__historiaTexto {
+            @include sizes(45%, 100%)
+        }
+        & &__historiaImagenes {
+            @include sizes(50%, 50%)
+        }
+    }
+
+    & &__textoSucursal {
+        font-size: 1.5rem;
+        color: yellowgreen;
+        background-color: black;
+        text-align: center;
+    }
+}
+img.main__producto:hover {
+    transform:scale(1.2, 1.2)
+}
