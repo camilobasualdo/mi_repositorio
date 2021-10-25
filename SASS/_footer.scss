@@ -3,9 +3,13 @@
     background-color: black;
     margin: 0rem 0rem 0rem 0rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    & &__redes {
+        display: flex;
+        flex-direction: row;
+    }
     & &__texto {
         color: yellowgreen;
         font-size: 1.5rem;

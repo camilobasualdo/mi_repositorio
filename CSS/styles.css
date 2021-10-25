@@ -1,4 +1,14 @@
 @charset "UTF-8";
+/* Aplicando tipografía, márgenes y fondo al documento */
+html {
+  padding: 0;
+  font-family: 'Barlow', sans-serif;
+  font-size: 62.5%;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background-color: whitesmoke;
+  scroll-behavior: smooth;
+}
+
 /* Estilo del Header */
 .header {
   background-color: black;
@@ -73,6 +83,7 @@
 .main .main__textoProducto {
   color: black;
   font-size: 2rem;
+  text-align: center;
 }
 
 .main .main__gradiente {
@@ -99,6 +110,7 @@
   text-justify: auto;
   font-weight: 100;
   color: black;
+  text-align: center;
 }
 
 .main .main__producto {
@@ -118,9 +130,11 @@
 
 .main .main__tamanioForm {
   font-size: 2rem;
+  margin: auto;
+  display: block;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1199px) {
   .main .main__historia {
     margin-bottom: 1rem;
   }
@@ -134,7 +148,7 @@
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .main .main__historia {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -166,8 +180,13 @@
 }
 
 img.main__producto:hover {
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.15, 1.15);
+          transform: scale(1.15, 1.15);
+}
+
+img.main__producto {
+  margin: auto;
+  display: block;
 }
 
 /* Estilo del Footer */
@@ -177,10 +196,10 @@ img.main__producto:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -189,9 +208,19 @@ img.main__producto:hover {
           align-items: center;
 }
 
+.footer .footer__redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .footer .footer__texto {
   color: yellowgreen;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .footer .footer__logoFacebook img {
@@ -207,15 +236,5 @@ img.main__producto:hover {
 .footer .footer__logoInstagram img {
   height: 2.5rem;
   width: 2.5rem;
-}
-
-/* Aplicando tipografía, márgenes y fondo al documento */
-html {
-  padding: 0;
-  font-family: 'Barlow', sans-serif;
-  font-size: 62.5%;
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-  background-color: whitesmoke;
-  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=styles.css.map */
